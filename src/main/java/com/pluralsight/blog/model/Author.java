@@ -24,6 +24,9 @@ public class Author {
     private String password;
     @OneToMany
     List<Post> posts;
+    @Version
+    private Long version;
+
     public Author() {
         super();
         posts= new ArrayList<>();
